@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topo">
+    <h1>Minhas Tarefas</h1>
+  </header>
+
+  <main class="conteudo">
+
+    <form id="form-nova-tarefa">
+      <input type="text" id="input-tarefa" placeholder="Digite uma nova tarefa..." required />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <ul id="lista-tarefas"></ul>
+
+    <p id="msg-vazio" class="msg-vazio">Nenhuma tarefa cadastrada ainda.</p>
+
+  </main>
+
+  <nav class="rodape">
+    <a href="index.html" class="ativo">Início</a>
+    <a href="sobre.html">Sobre o app</a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>

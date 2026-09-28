@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Sobre o App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topo">
+    <h1>Sobre este app</h1>
+  </header>
+
+  <main class="conteudo">
+    <p>
+      Este é um aplicativo simples de lista de tarefas, feito com HTML, CSS e
+      JavaScript "puro" e empacotado como app nativo (Android/iOS) usando o
+      <strong>Capacitor</strong>.
+    </p>
+    <p>
+      O Capacitor pega essa mesma aplicação web e coloca ela dentro de uma
+      WebView nativa, dando acesso a recursos do celular através de plugins
+      em JavaScript.
+    </p>
+
+    <button id="btn-vibrar">Testar vibração do celular</button>
+    <p id="msg-vibrar"></p>
+  </main>
+
+  <nav class="rodape">
+    <a href="index.html">Início</a>
+    <a href="sobre.html" class="ativo">Sobre o app</a>
+  </nav>
+
+  <script src="sobre.js"></script>
+</body>
+</html>

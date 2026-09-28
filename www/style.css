@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.topo {
+  background-color: #3880ff;
+  color: #fff;
+  padding: 20px 16px;
+  padding-top: max(20px, env(safe-area-inset-top));
+}
+
+.topo h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.conteudo {
+  flex: 1;
+  padding: 16px;
+}
+
+#form-nova-tarefa {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#input-tarefa {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#form-nova-tarefa button,
+#btn-vibrar {
+  background-color: #3880ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 16px;
+}
+
+#lista-tarefas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-tarefas li {
+  background: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#lista-tarefas li.feita span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+#lista-tarefas li .remover {
+  color: #e33;
+  border: none;
+  background: none;
+  font-size: 14px;
+}
+
+.msg-vazio {
+  color: #777;
+  text-align: center;
+}
+
+.rodape {
+  display: flex;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.rodape a {
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  color: #555;
+}
+
+.rodape a.ativo {
+  color: #3880ff;
+  font-weight: bold;
+}

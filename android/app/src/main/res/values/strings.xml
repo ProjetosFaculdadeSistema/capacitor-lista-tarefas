@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Lista de Tarefas</string>
+    <string name="title_activity_main">Lista de Tarefas</string>
+    <string name="package_name">br.edu.ifpr.listatarefas</string>
+    <string name="custom_url_scheme">br.edu.ifpr.listatarefas</string>
+</resources>
