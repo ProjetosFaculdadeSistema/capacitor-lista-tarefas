@@ -92,56 +92,6 @@ O app instala e abre sozinho no emulador/celular.
 
 ---
 
-## 5. Subindo pro GitHub (pra entregar o link)
-
-```bash
-git init
-git add .
-git commit -m "primeira versao do app de lista de tarefas com capacitor"
-```
-
-Depois cria um repositório vazio no GitHub (github.com → New repository,
-sem README nem .gitignore prontos) e roda o que ele mesmo mostra na
-tela, algo como:
-
-```bash
-git remote add origin https://github.com/SEU-USUARIO/lista-tarefas-capacitor.git
-git branch -M main
-git push -u origin main
-```
-
-Esse é o link que você entrega como "Link do Github para a Página
-Prática".
-
-> Dica: a pasta `android/` gerada é grande e não precisa (nem deve) subir
-> pro GitHub — o `.gitignore` que já vem no projeto já cuida de deixar de
-> fora as partes pesadas.
-
----
-
-## 6. Pra apresentar (o que mostrar ao vivo)
-
-Roteiro rápido de demonstração, com o app aberto no emulador ou no
-celular:
-
-1. Abre a tela inicial e mostra a lista vazia.
-2. Digita uma tarefa e clica em "Adicionar" → mostra que apareceu na
-   lista (captura do evento de envio do formulário).
-3. Toca no texto da tarefa → mostra que risca (marca como concluída).
-4. Toca em "remover" → tarefa some da lista.
-5. Toca em "Sobre o app" no menu de baixo → mostra a navegação entre
-   páginas.
-6. Na tela Sobre, toca no botão de vibração → celular vibra (mostra
-   acesso a um recurso de hardware do aparelho).
-7. Fecha e abre o app de novo → mostra que as tarefas continuam lá
-   (fica salvo no aparelho, no `localStorage`).
-
-Depois é só abrir o código (`www/app.js`) no editor de texto e mostrar
-que é só HTML/CSS/JS comum, igual se fosse fazer um site — é isso que o
-Capacitor "embala" pra virar app.
-
----
-
 ## Estrutura do projeto
 
 ```
